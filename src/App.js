@@ -29,23 +29,23 @@ const App = () => {
             type="video/mp4"
           />
         </video>
-        <h1 className="text-center text-5xl font-bold py-5">
+        <h1 className="text-center text-3xl md:text-5xl font-bold py-5">
           COVID-19 Data India
         </h1>
-        <div className="flex">
-          <h3 className="mx-4 text-xl">
-            Total Confirmed Cases:
+        <div className="flex max-md:flex-col">
+          <h3 className=" max-md:my-3 mx-4 text-xl">
+            Confirmed Cases:
             <span className="text-teal-500 font-bold ml-2">
               {ApiData.data && ApiData.data.summary.total}
             </span>
           </h3>
-          <h3 className="mx-4 text-xl">
+          <h3 className=" max-md:my-3 mx-4 text-xl">
             Total Discharged:
             <span className="text-teal-500 font-bold ml-2">
               {ApiData.data && ApiData.data.summary.discharged}
             </span>
           </h3>
-          <h3 className="mx-4 text-xl">
+          <h3 className=" max-md:my-3 mx-4 text-xl">
             Total Deaths:
             <span className="text-teal-500 font-bold ml-2">
               {ApiData.data && ApiData.data.summary.deaths}
